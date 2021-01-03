@@ -285,7 +285,7 @@ public class NashornSandboxImpl implements NashornSandbox {
 	public void setMaxMemory(final long limit) {
 		maxMemory = limit;
 	}
-
+	
 	protected JsSanitizer getSanitizer() {
 		if (sanitizer == null) {
 			if (suppliedCache == null) {
