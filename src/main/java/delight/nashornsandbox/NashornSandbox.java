@@ -95,6 +95,8 @@ public interface NashornSandbox {
    * @param writer the writer, eg. {@link StringWriter}
    */
   void setWriter(Writer writer);
+
+  void setErrorWriter(Writer writer);
   
   /**
    * Specifies the executor service which is used to run scripts when a CPU time 

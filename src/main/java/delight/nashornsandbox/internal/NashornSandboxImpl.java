@@ -397,6 +397,11 @@ public class NashornSandboxImpl implements NashornSandbox {
 	}
 
 	@Override
+	public void setErrorWriter(Writer writer) {
+		scriptEngine.getContext().setErrorWriter(writer);
+	}
+
+	@Override
 	public void setMaxPreparedStatements(final int max) {
 		if (maxPreparedStatements != max) {
 			sanitizer = null;
